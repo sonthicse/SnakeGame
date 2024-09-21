@@ -12,6 +12,7 @@ public:
     void setDirection(char newDirection);
     bool checkCollision(int width, int height);
     const std::vector<std::pair<int, int>>& getBody() const;
+    char getDirection() const;
 
 private:
     std::vector<std::pair<int, int>> body;

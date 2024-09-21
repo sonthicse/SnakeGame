@@ -56,3 +56,5 @@ bool Snake::checkCollision(int width, int height) {
 const std::vector<std::pair<int, int>>& Snake::getBody() const {
     return body;
 }
+
+char Snake::getDirection() const { return direction; }

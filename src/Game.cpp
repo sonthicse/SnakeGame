@@ -11,10 +11,10 @@ void Game::start() {
         if (_kbhit()) {
             char key = _getch();
             switch (key) {
-                case 'w': snake.setDirection('U'); break;
-                case 's': snake.setDirection('D'); break;
-                case 'a': snake.setDirection('L'); break;
-                case 'd': snake.setDirection('R'); break;
+                case 'w': if ('s' != snake.getDirection()) snake.setDirection('U'); break;
+                case 's': if ('w' != snake.getDirection()) snake.setDirection('D'); break;
+                case 'a': if ('d' != snake.getDirection()) snake.setDirection('L'); break;
+                case 'd': if ('a' != snake.getDirection()) snake.setDirection('R'); break;
             }
         }
 
