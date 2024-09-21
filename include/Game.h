@@ -20,4 +20,6 @@ private:
     bool isOver;
 };
 
+#include "../src/Game.cpp"
+
 #endif

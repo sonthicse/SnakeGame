@@ -24,4 +24,6 @@ private:
     int y; // Tọa độ Y của thức ăn
 };
 
+#include "../src/Food.cpp"
+
 #endif

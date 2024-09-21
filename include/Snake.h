@@ -18,4 +18,6 @@ private:
     char direction;
 };
 
+#include "../src/Snake.cpp"
+
 #endif

@@ -1,6 +1,8 @@
 #include "../include/Game.h"
 #include <iostream>
-#include <conio.h> // Windows, trên Linux dùng ncurses
+#include <conio.h>
+#include <thread>
+#include <chrono>
 
 Game::Game(int w, int h) : width(w), height(h), snake(w / 2, h / 2), food(w, h), score(0), isOver(false) {}
 
@@ -20,7 +22,7 @@ void Game::start() {
         drawGame();
 
         // Delay để game không chạy quá nhanh
-        _sleep(200);
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
 
     std::cout << "Game Over! Your score: " << score << std::endl;

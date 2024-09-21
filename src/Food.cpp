@@ -1,6 +1,8 @@
 #include "../include/Food.h"
 #include <cstdlib>  // for rand() and srand()
 #include <ctime>    // for time()
+#include <algorithm>
+#include <iostream>
 
 Food::Food(int width, int height) {
     // Khởi tạo random seed cho rand()
